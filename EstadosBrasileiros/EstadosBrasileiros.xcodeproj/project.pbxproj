@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		814CE2171C4DA08B001326FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814CE2161C4DA08B001326FA /* AppDelegate.swift */; };
+		814CE2191C4DA08B001326FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814CE2181C4DA08B001326FA /* ViewController.swift */; };
+		814CE21C1C4DA08B001326FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814CE21A1C4DA08B001326FA /* Main.storyboard */; };
+		814CE21E1C4DA08B001326FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814CE21D1C4DA08B001326FA /* Assets.xcassets */; };
+		814CE2211C4DA08B001326FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814CE21F1C4DA08B001326FA /* LaunchScreen.storyboard */; };
+		814CE22E1C4DA27C001326FA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814CE22C1C4DA27C001326FA /* Interface.storyboard */; };
+		814CE2301C4DA27C001326FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814CE22F1C4DA27C001326FA /* Assets.xcassets */; };
+		814CE2371C4DA27C001326FA /* EstadosCapitais Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 814CE2361C4DA27C001326FA /* EstadosCapitais Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		814CE23E1C4DA27C001326FA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814CE23D1C4DA27C001326FA /* InterfaceController.swift */; };
+		814CE2401C4DA27C001326FA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814CE23F1C4DA27C001326FA /* ExtensionDelegate.swift */; };
+		814CE2421C4DA27C001326FA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814CE2411C4DA27C001326FA /* NotificationController.swift */; };
+		814CE2441C4DA27C001326FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814CE2431C4DA27C001326FA /* Assets.xcassets */; };
+		814CE2481C4DA27C001326FA /* EstadosCapitais.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 814CE22A1C4DA27C001326FA /* EstadosCapitais.app */; };
+		814CE2601C4DAEE1001326FA /* EstadosRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814CE25F1C4DAEE1001326FA /* EstadosRow.swift */; };
+		814CE2621C4DB1E6001326FA /* DetalhesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814CE2611C4DB1E6001326FA /* DetalhesInterfaceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		814CE2381C4DA27C001326FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 814CE20B1C4DA08B001326FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 814CE2351C4DA27C001326FA;
+			remoteInfo = "EstadosCapitais Extension";
+		};
+		814CE2461C4DA27C001326FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 814CE20B1C4DA08B001326FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 814CE2291C4DA27C001326FA;
+			remoteInfo = EstadosCapitais;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		814CE24C1C4DA27C001326FA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				814CE2371C4DA27C001326FA /* EstadosCapitais Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814CE2501C4DA27C001326FA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				814CE2481C4DA27C001326FA /* EstadosCapitais.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		814CE2131C4DA08B001326FA /* EstadosBrasileiros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EstadosBrasileiros.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		814CE2161C4DA08B001326FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		814CE2181C4DA08B001326FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		814CE21B1C4DA08B001326FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		814CE21D1C4DA08B001326FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		814CE2201C4DA08B001326FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		814CE2221C4DA08B001326FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		814CE22A1C4DA27C001326FA /* EstadosCapitais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EstadosCapitais.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		814CE22D1C4DA27C001326FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		814CE22F1C4DA27C001326FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		814CE2311C4DA27C001326FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		814CE2361C4DA27C001326FA /* EstadosCapitais Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "EstadosCapitais Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		814CE23C1C4DA27C001326FA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		814CE23D1C4DA27C001326FA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		814CE23F1C4DA27C001326FA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		814CE2411C4DA27C001326FA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		814CE2431C4DA27C001326FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		814CE2451C4DA27C001326FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		814CE25F1C4DAEE1001326FA /* EstadosRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstadosRow.swift; sourceTree = "<group>"; };
+		814CE2611C4DB1E6001326FA /* DetalhesInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesInterfaceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		814CE2101C4DA08B001326FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814CE2331C4DA27C001326FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		814CE20A1C4DA08B001326FA = {
+			isa = PBXGroup;
+			children = (
+				814CE2151C4DA08B001326FA /* EstadosBrasileiros */,
+				814CE22B1C4DA27C001326FA /* EstadosCapitais */,
+				814CE23A1C4DA27C001326FA /* EstadosCapitais Extension */,
+				814CE2141C4DA08B001326FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		814CE2141C4DA08B001326FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				814CE2131C4DA08B001326FA /* EstadosBrasileiros.app */,
+				814CE22A1C4DA27C001326FA /* EstadosCapitais.app */,
+				814CE2361C4DA27C001326FA /* EstadosCapitais Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		814CE2151C4DA08B001326FA /* EstadosBrasileiros */ = {
+			isa = PBXGroup;
+			children = (
+				814CE2161C4DA08B001326FA /* AppDelegate.swift */,
+				814CE2181C4DA08B001326FA /* ViewController.swift */,
+				814CE21A1C4DA08B001326FA /* Main.storyboard */,
+				814CE21D1C4DA08B001326FA /* Assets.xcassets */,
+				814CE21F1C4DA08B001326FA /* LaunchScreen.storyboard */,
+				814CE2221C4DA08B001326FA /* Info.plist */,
+			);
+			path = EstadosBrasileiros;
+			sourceTree = "<group>";
+		};
+		814CE22B1C4DA27C001326FA /* EstadosCapitais */ = {
+			isa = PBXGroup;
+			children = (
+				814CE22F1C4DA27C001326FA /* Assets.xcassets */,
+				814CE2311C4DA27C001326FA /* Info.plist */,
+				814CE22C1C4DA27C001326FA /* Interface.storyboard */,
+			);
+			path = EstadosCapitais;
+			sourceTree = "<group>";
+		};
+		814CE23A1C4DA27C001326FA /* EstadosCapitais Extension */ = {
+			isa = PBXGroup;
+			children = (
+				814CE23D1C4DA27C001326FA /* InterfaceController.swift */,
+				814CE2611C4DB1E6001326FA /* DetalhesInterfaceController.swift */,
+				814CE23F1C4DA27C001326FA /* ExtensionDelegate.swift */,
+				814CE2411C4DA27C001326FA /* NotificationController.swift */,
+				814CE25F1C4DAEE1001326FA /* EstadosRow.swift */,
+				814CE2431C4DA27C001326FA /* Assets.xcassets */,
+				814CE2451C4DA27C001326FA /* Info.plist */,
+				814CE23B1C4DA27C001326FA /* Supporting Files */,
+			);
+			path = "EstadosCapitais Extension";
+			sourceTree = "<group>";
+		};
+		814CE23B1C4DA27C001326FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				814CE23C1C4DA27C001326FA /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		814CE2121C4DA08B001326FA /* EstadosBrasileiros */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814CE2251C4DA08B001326FA /* Build configuration list for PBXNativeTarget "EstadosBrasileiros" */;
+			buildPhases = (
+				814CE20F1C4DA08B001326FA /* Sources */,
+				814CE2101C4DA08B001326FA /* Frameworks */,
+				814CE2111C4DA08B001326FA /* Resources */,
+				814CE2501C4DA27C001326FA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				814CE2471C4DA27C001326FA /* PBXTargetDependency */,
+			);
+			name = EstadosBrasileiros;
+			productName = EstadosBrasileiros;
+			productReference = 814CE2131C4DA08B001326FA /* EstadosBrasileiros.app */;
+			productType = "com.apple.product-type.application";
+		};
+		814CE2291C4DA27C001326FA /* EstadosCapitais */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814CE24D1C4DA27C001326FA /* Build configuration list for PBXNativeTarget "EstadosCapitais" */;
+			buildPhases = (
+				814CE2281C4DA27C001326FA /* Resources */,
+				814CE24C1C4DA27C001326FA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				814CE2391C4DA27C001326FA /* PBXTargetDependency */,
+			);
+			name = EstadosCapitais;
+			productName = EstadosCapitais;
+			productReference = 814CE22A1C4DA27C001326FA /* EstadosCapitais.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		814CE2351C4DA27C001326FA /* EstadosCapitais Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814CE2491C4DA27C001326FA /* Build configuration list for PBXNativeTarget "EstadosCapitais Extension" */;
+			buildPhases = (
+				814CE2321C4DA27C001326FA /* Sources */,
+				814CE2331C4DA27C001326FA /* Frameworks */,
+				814CE2341C4DA27C001326FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EstadosCapitais Extension";
+			productName = "EstadosCapitais Extension";
+			productReference = 814CE2361C4DA27C001326FA /* EstadosCapitais Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		814CE20B1C4DA08B001326FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Marcos Vinicius Albuquerque";
+				TargetAttributes = {
+					814CE2121C4DA08B001326FA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					814CE2291C4DA27C001326FA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					814CE2351C4DA27C001326FA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 814CE20E1C4DA08B001326FA /* Build configuration list for PBXProject "EstadosBrasileiros" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 814CE20A1C4DA08B001326FA;
+			productRefGroup = 814CE2141C4DA08B001326FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				814CE2121C4DA08B001326FA /* EstadosBrasileiros */,
+				814CE2291C4DA27C001326FA /* EstadosCapitais */,
+				814CE2351C4DA27C001326FA /* EstadosCapitais Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		814CE2111C4DA08B001326FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814CE2211C4DA08B001326FA /* LaunchScreen.storyboard in Resources */,
+				814CE21E1C4DA08B001326FA /* Assets.xcassets in Resources */,
+				814CE21C1C4DA08B001326FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814CE2281C4DA27C001326FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814CE2301C4DA27C001326FA /* Assets.xcassets in Resources */,
+				814CE22E1C4DA27C001326FA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814CE2341C4DA27C001326FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814CE2441C4DA27C001326FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		814CE20F1C4DA08B001326FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814CE2191C4DA08B001326FA /* ViewController.swift in Sources */,
+				814CE2171C4DA08B001326FA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814CE2321C4DA27C001326FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814CE2421C4DA27C001326FA /* NotificationController.swift in Sources */,
+				814CE2401C4DA27C001326FA /* ExtensionDelegate.swift in Sources */,
+				814CE2621C4DB1E6001326FA /* DetalhesInterfaceController.swift in Sources */,
+				814CE2601C4DAEE1001326FA /* EstadosRow.swift in Sources */,
+				814CE23E1C4DA27C001326FA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		814CE2391C4DA27C001326FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 814CE2351C4DA27C001326FA /* EstadosCapitais Extension */;
+			targetProxy = 814CE2381C4DA27C001326FA /* PBXContainerItemProxy */;
+		};
+		814CE2471C4DA27C001326FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 814CE2291C4DA27C001326FA /* EstadosCapitais */;
+			targetProxy = 814CE2461C4DA27C001326FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		814CE21A1C4DA08B001326FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				814CE21B1C4DA08B001326FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		814CE21F1C4DA08B001326FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				814CE2201C4DA08B001326FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		814CE22C1C4DA27C001326FA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				814CE22D1C4DA27C001326FA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		814CE2231C4DA08B001326FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		814CE2241C4DA08B001326FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		814CE2261C4DA08B001326FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EstadosBrasileiros/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mvalbuquerque.EstadosBrasileiros;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		814CE2271C4DA08B001326FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EstadosBrasileiros/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mvalbuquerque.EstadosBrasileiros;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		814CE24A1C4DA27C001326FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "EstadosCapitais Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mvalbuquerque.EstadosBrasileiros.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		814CE24B1C4DA27C001326FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "EstadosCapitais Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mvalbuquerque.EstadosBrasileiros.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		814CE24E1C4DA27C001326FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = EstadosCapitais_Extension;
+				INFOPLIST_FILE = EstadosCapitais/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mvalbuquerque.EstadosBrasileiros.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "EstadosBrasileiros/EstadosCapitais-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		814CE24F1C4DA27C001326FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = EstadosCapitais_Extension;
+				INFOPLIST_FILE = EstadosCapitais/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mvalbuquerque.EstadosBrasileiros.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "EstadosBrasileiros/EstadosCapitais-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		814CE20E1C4DA08B001326FA /* Build configuration list for PBXProject "EstadosBrasileiros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814CE2231C4DA08B001326FA /* Debug */,
+				814CE2241C4DA08B001326FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814CE2251C4DA08B001326FA /* Build configuration list for PBXNativeTarget "EstadosBrasileiros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814CE2261C4DA08B001326FA /* Debug */,
+				814CE2271C4DA08B001326FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814CE2491C4DA27C001326FA /* Build configuration list for PBXNativeTarget "EstadosCapitais Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814CE24A1C4DA27C001326FA /* Debug */,
+				814CE24B1C4DA27C001326FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814CE24D1C4DA27C001326FA /* Build configuration list for PBXNativeTarget "EstadosCapitais" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814CE24E1C4DA27C001326FA /* Debug */,
+				814CE24F1C4DA27C001326FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 814CE20B1C4DA08B001326FA /* Project object */;
+}
