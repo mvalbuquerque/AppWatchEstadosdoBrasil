@@ -18,3 +18,7 @@ The idea of the app is simple: List States Brasil
 Tks, 
 
 @mvalbuquerque
+
+
+"Done is better than Perfect"
+@dede.exe
