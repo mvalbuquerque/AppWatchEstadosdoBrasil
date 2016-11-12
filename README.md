@@ -1,3 +1,3 @@
-# AppleWatchEstadosdoBrasil
+# AppleWatch Estados do Brasil
 
-Essa versão é compativel por enquanto com Swift 2 apenas.
+Olá! Pessoal, mais um aplicativo 
