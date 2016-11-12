@@ -48,8 +48,8 @@ class InterfaceController: WKInterfaceController {
     
     //Define o objeto da tableview
     @IBOutlet var tableView: WKInterfaceTable!
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
         // Configure interface objects here.
     //Carrega a função setupTable
@@ -65,23 +65,22 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-    
-    
     //Função responsável para popular as linhas da tableview
     func setupTable()  {
-    tableView.setNumberOfRows(estados.count, withRowType: "EstadosRow")
+        tableView.setNumberOfRows(estados.count, withRowType: "EstadosRow")
         
-        for var i  = 0; i < estados.count; ++i  {
-            if let row = tableView.rowControllerAtIndex(i) as? EstadosRow {
-            row.estadoNome.setText(estados[i])
+        for (index,estadoSelecionado) in estados.enumerated() {
             
+            if let row = tableView.rowController(at: index)as? EstadosRow {
+                row.estadoNome.setText(estadoSelecionado)
+                
             }
         }
         
     }
     //Função responsável por pegar o index e enviar para outra storybord trazendo o conteúdo
-    override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
-        self.pushControllerWithName("showDetails", context: estados[rowIndex])
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        self.pushController(withName: "showDetails", context: estados[rowIndex])
     }
 }
 

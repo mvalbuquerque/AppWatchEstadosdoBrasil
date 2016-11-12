@@ -80,8 +80,8 @@ class DetalhesInterfaceController: WKInterfaceController {
     
     
 
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
         // Configure interface objects here.
         
